@@ -1,0 +1,19 @@
+<html>
+<body>
+    <!-- ライブラリ読み込み -->
+    <script src="http://webmo.local/javascripts/webmo.js"></script>
+    <!-- 2秒間回す -->
+    <script type="text/javascript">
+        var webmo = new Webmo.ws("webmo.local");
+        webmo.onopen = function () {
+            webmo.rotate(1060)
+            setTimeout(function () {
+                webmo.stop()
+            }, 5000)
+
+
+        }
+
+    </script>
+</body>
+</html>
